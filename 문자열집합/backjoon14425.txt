@@ -1,0 +1,10 @@
+n,m=map(int,input().split())
+words=[] #집합
+answer=0 #몇 개가 포함되어 있는지
+for _ in range(n):
+    words.append(input())
+for _ in range(m):
+    word=input()
+    if word in words:
+        answer+=1
+print(answer)
