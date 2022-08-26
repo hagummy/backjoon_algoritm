@@ -16,7 +16,7 @@ cloud.append([n-2,0])
 cloud.append([n-2,1])
 answer=0
 
-def move(dir,cnt):
+def move(dir,cnt,visited):
     temp=[]
     for _ in range(len(cloud)):
         r,c=cloud.popleft()
